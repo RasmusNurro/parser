@@ -1,4 +1,3 @@
-
 cmake_minimum_required(VERSION 3.24.0)
 
 set (This TimeParser)
@@ -20,6 +19,13 @@ set(Sources
 
 add_library(${This} STATIC ${Sources} ${Headers})
 
+# Uudet testit
+set(CommandParserHeaders
+    CommandParser.h
+)
+set(CommandParserSources
+    CommandParser.cpp
+)
+add_library(CommandParser STATIC ${CommandParserSources} ${CommandParserHeaders})
+
 add_subdirectory(test_cases)
-
-

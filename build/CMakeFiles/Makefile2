@@ -53,22 +53,24 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/TimeParser.dir/all
+all: CMakeFiles/CommandParser.dir/all
 all: googletest/all
 all: test_cases/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/TimeParser.dir/codegen
+codegen: CMakeFiles/CommandParser.dir/codegen
 codegen: googletest/codegen
 codegen: test_cases/codegen
 .PHONY : codegen
@@ -80,6 +82,7 @@ preinstall: test_cases/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/TimeParser.dir/clean
+clean: CMakeFiles/CommandParser.dir/clean
 clean: googletest/clean
 clean: test_cases/clean
 .PHONY : clean
@@ -155,10 +158,12 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 
 # Recursive "all" directory target.
 test_cases/all: test_cases/CMakeFiles/TimeParserTest.dir/all
+test_cases/all: test_cases/CMakeFiles/CommandParserTest.dir/all
 .PHONY : test_cases/all
 
 # Recursive "codegen" directory target.
 test_cases/codegen: test_cases/CMakeFiles/TimeParserTest.dir/codegen
+test_cases/codegen: test_cases/CMakeFiles/CommandParserTest.dir/codegen
 .PHONY : test_cases/codegen
 
 # Recursive "preinstall" directory target.
@@ -195,6 +200,7 @@ test_cases/clean: test_cases/CMakeFiles/ContinuousCoverage.dir/clean
 test_cases/clean: test_cases/CMakeFiles/ContinuousMemCheck.dir/clean
 test_cases/clean: test_cases/CMakeFiles/ContinuousSubmit.dir/clean
 test_cases/clean: test_cases/CMakeFiles/TimeParserTest.dir/clean
+test_cases/clean: test_cases/CMakeFiles/CommandParserTest.dir/clean
 .PHONY : test_cases/clean
 
 #=============================================================================
@@ -204,14 +210,14 @@ test_cases/clean: test_cases/CMakeFiles/TimeParserTest.dir/clean
 CMakeFiles/TimeParser.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TimeParser.dir\build.make CMakeFiles/TimeParser.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TimeParser.dir\build.make CMakeFiles/TimeParser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=1,2 "Built target TimeParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=5,6 "Built target TimeParser"
 .PHONY : CMakeFiles/TimeParser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TimeParser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TimeParser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : CMakeFiles/TimeParser.dir/rule
 
 # Convenience name for target.
@@ -221,7 +227,7 @@ TimeParser: CMakeFiles/TimeParser.dir/rule
 # codegen rule for target.
 CMakeFiles/TimeParser.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TimeParser.dir\build.make CMakeFiles/TimeParser.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=1,2 "Finished codegen for target TimeParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=5,6 "Finished codegen for target TimeParser"
 .PHONY : CMakeFiles/TimeParser.dir/codegen
 
 # clean rule for target.
@@ -230,20 +236,52 @@ CMakeFiles/TimeParser.dir/clean:
 .PHONY : CMakeFiles/TimeParser.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/CommandParser.dir
+
+# All Build rule for target.
+CMakeFiles/CommandParser.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=1,2 "Built target CommandParser"
+.PHONY : CMakeFiles/CommandParser.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CommandParser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CommandParser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
+.PHONY : CMakeFiles/CommandParser.dir/rule
+
+# Convenience name for target.
+CommandParser: CMakeFiles/CommandParser.dir/rule
+.PHONY : CommandParser
+
+# codegen rule for target.
+CMakeFiles/CommandParser.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=1,2 "Finished codegen for target CommandParser"
+.PHONY : CMakeFiles/CommandParser.dir/codegen
+
+# clean rule for target.
+CMakeFiles/CommandParser.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/clean
+.PHONY : CMakeFiles/CommandParser.dir/clean
+
+#=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 googletest/googlemock/CMakeFiles/gmock.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=9,10 "Built target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -253,7 +291,7 @@ gmock: googletest/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 googletest/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=5,6 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=9,10 "Finished codegen for target gmock"
 .PHONY : googletest/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -269,14 +307,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMake
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=11,12 "Built target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -286,7 +324,7 @@ gmock_main: googletest/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 googletest/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=7,8 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=11,12 "Finished codegen for target gmock_main"
 .PHONY : googletest/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -301,14 +339,14 @@ googletest/googlemock/CMakeFiles/gmock_main.dir/clean:
 googletest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=13,14 "Built target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -318,7 +356,7 @@ gtest: googletest/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 googletest/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=9,10 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=13,14 "Finished codegen for target gtest"
 .PHONY : googletest/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -333,14 +371,14 @@ googletest/googletest/CMakeFiles/gtest.dir/clean:
 googletest/googletest/CMakeFiles/gtest_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=15,16 "Built target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 googletest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googletest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -350,7 +388,7 @@ gtest_main: googletest/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 googletest/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=11,12 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=15,16 "Finished codegen for target gtest_main"
 .PHONY : googletest/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.
@@ -365,14 +403,14 @@ googletest/googletest/CMakeFiles/gtest_main.dir/clean:
 test_cases/CMakeFiles/Experimental.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Experimental.dir\build.make test_cases/CMakeFiles/Experimental.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Experimental.dir\build.make test_cases/CMakeFiles/Experimental.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target Experimental"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target Experimental"
 .PHONY : test_cases/CMakeFiles/Experimental.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/Experimental.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Experimental.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -382,7 +420,7 @@ Experimental: test_cases/CMakeFiles/Experimental.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/Experimental.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Experimental.dir\build.make test_cases/CMakeFiles/Experimental.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target Experimental"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target Experimental"
 .PHONY : test_cases/CMakeFiles/Experimental.dir/codegen
 
 # clean rule for target.
@@ -397,14 +435,14 @@ test_cases/CMakeFiles/Experimental.dir/clean:
 test_cases/CMakeFiles/Nightly.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Nightly.dir\build.make test_cases/CMakeFiles/Nightly.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Nightly.dir\build.make test_cases/CMakeFiles/Nightly.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target Nightly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target Nightly"
 .PHONY : test_cases/CMakeFiles/Nightly.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/Nightly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Nightly.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -414,7 +452,7 @@ Nightly: test_cases/CMakeFiles/Nightly.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/Nightly.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Nightly.dir\build.make test_cases/CMakeFiles/Nightly.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target Nightly"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target Nightly"
 .PHONY : test_cases/CMakeFiles/Nightly.dir/codegen
 
 # clean rule for target.
@@ -429,14 +467,14 @@ test_cases/CMakeFiles/Nightly.dir/clean:
 test_cases/CMakeFiles/Continuous.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Continuous.dir\build.make test_cases/CMakeFiles/Continuous.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Continuous.dir\build.make test_cases/CMakeFiles/Continuous.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target Continuous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target Continuous"
 .PHONY : test_cases/CMakeFiles/Continuous.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/Continuous.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Continuous.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -446,7 +484,7 @@ Continuous: test_cases/CMakeFiles/Continuous.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/Continuous.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Continuous.dir\build.make test_cases/CMakeFiles/Continuous.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target Continuous"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target Continuous"
 .PHONY : test_cases/CMakeFiles/Continuous.dir/codegen
 
 # clean rule for target.
@@ -461,14 +499,14 @@ test_cases/CMakeFiles/Continuous.dir/clean:
 test_cases/CMakeFiles/NightlyMemoryCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemoryCheck.dir\build.make test_cases/CMakeFiles/NightlyMemoryCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemoryCheck.dir\build.make test_cases/CMakeFiles/NightlyMemoryCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyMemoryCheck"
 .PHONY : test_cases/CMakeFiles/NightlyMemoryCheck.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemoryCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -478,7 +516,7 @@ NightlyMemoryCheck: test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyMemoryCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemoryCheck.dir\build.make test_cases/CMakeFiles/NightlyMemoryCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyMemoryCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyMemoryCheck"
 .PHONY : test_cases/CMakeFiles/NightlyMemoryCheck.dir/codegen
 
 # clean rule for target.
@@ -493,14 +531,14 @@ test_cases/CMakeFiles/NightlyMemoryCheck.dir/clean:
 test_cases/CMakeFiles/NightlyStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyStart.dir\build.make test_cases/CMakeFiles/NightlyStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyStart.dir\build.make test_cases/CMakeFiles/NightlyStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyStart"
 .PHONY : test_cases/CMakeFiles/NightlyStart.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -510,7 +548,7 @@ NightlyStart: test_cases/CMakeFiles/NightlyStart.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyStart.dir\build.make test_cases/CMakeFiles/NightlyStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyStart"
 .PHONY : test_cases/CMakeFiles/NightlyStart.dir/codegen
 
 # clean rule for target.
@@ -525,14 +563,14 @@ test_cases/CMakeFiles/NightlyStart.dir/clean:
 test_cases/CMakeFiles/NightlyUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyUpdate.dir\build.make test_cases/CMakeFiles/NightlyUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyUpdate.dir\build.make test_cases/CMakeFiles/NightlyUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyUpdate"
 .PHONY : test_cases/CMakeFiles/NightlyUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -542,7 +580,7 @@ NightlyUpdate: test_cases/CMakeFiles/NightlyUpdate.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyUpdate.dir\build.make test_cases/CMakeFiles/NightlyUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyUpdate"
 .PHONY : test_cases/CMakeFiles/NightlyUpdate.dir/codegen
 
 # clean rule for target.
@@ -557,14 +595,14 @@ test_cases/CMakeFiles/NightlyUpdate.dir/clean:
 test_cases/CMakeFiles/NightlyConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyConfigure.dir\build.make test_cases/CMakeFiles/NightlyConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyConfigure.dir\build.make test_cases/CMakeFiles/NightlyConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyConfigure"
 .PHONY : test_cases/CMakeFiles/NightlyConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -574,7 +612,7 @@ NightlyConfigure: test_cases/CMakeFiles/NightlyConfigure.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyConfigure.dir\build.make test_cases/CMakeFiles/NightlyConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyConfigure"
 .PHONY : test_cases/CMakeFiles/NightlyConfigure.dir/codegen
 
 # clean rule for target.
@@ -589,14 +627,14 @@ test_cases/CMakeFiles/NightlyConfigure.dir/clean:
 test_cases/CMakeFiles/NightlyBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyBuild.dir\build.make test_cases/CMakeFiles/NightlyBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyBuild.dir\build.make test_cases/CMakeFiles/NightlyBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyBuild"
 .PHONY : test_cases/CMakeFiles/NightlyBuild.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -606,7 +644,7 @@ NightlyBuild: test_cases/CMakeFiles/NightlyBuild.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyBuild.dir\build.make test_cases/CMakeFiles/NightlyBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyBuild"
 .PHONY : test_cases/CMakeFiles/NightlyBuild.dir/codegen
 
 # clean rule for target.
@@ -621,14 +659,14 @@ test_cases/CMakeFiles/NightlyBuild.dir/clean:
 test_cases/CMakeFiles/NightlyTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyTest.dir\build.make test_cases/CMakeFiles/NightlyTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyTest.dir\build.make test_cases/CMakeFiles/NightlyTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyTest"
 .PHONY : test_cases/CMakeFiles/NightlyTest.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -638,7 +676,7 @@ NightlyTest: test_cases/CMakeFiles/NightlyTest.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyTest.dir\build.make test_cases/CMakeFiles/NightlyTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyTest"
 .PHONY : test_cases/CMakeFiles/NightlyTest.dir/codegen
 
 # clean rule for target.
@@ -653,14 +691,14 @@ test_cases/CMakeFiles/NightlyTest.dir/clean:
 test_cases/CMakeFiles/NightlyCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyCoverage.dir\build.make test_cases/CMakeFiles/NightlyCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyCoverage.dir\build.make test_cases/CMakeFiles/NightlyCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyCoverage"
 .PHONY : test_cases/CMakeFiles/NightlyCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -670,7 +708,7 @@ NightlyCoverage: test_cases/CMakeFiles/NightlyCoverage.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyCoverage.dir\build.make test_cases/CMakeFiles/NightlyCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyCoverage"
 .PHONY : test_cases/CMakeFiles/NightlyCoverage.dir/codegen
 
 # clean rule for target.
@@ -685,14 +723,14 @@ test_cases/CMakeFiles/NightlyCoverage.dir/clean:
 test_cases/CMakeFiles/NightlyMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemCheck.dir\build.make test_cases/CMakeFiles/NightlyMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemCheck.dir\build.make test_cases/CMakeFiles/NightlyMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlyMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlyMemCheck"
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlyMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -702,7 +740,7 @@ NightlyMemCheck: test_cases/CMakeFiles/NightlyMemCheck.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlyMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemCheck.dir\build.make test_cases/CMakeFiles/NightlyMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlyMemCheck"
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/codegen
 
 # clean rule for target.
@@ -717,14 +755,14 @@ test_cases/CMakeFiles/NightlyMemCheck.dir/clean:
 test_cases/CMakeFiles/NightlySubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlySubmit.dir\build.make test_cases/CMakeFiles/NightlySubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlySubmit.dir\build.make test_cases/CMakeFiles/NightlySubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target NightlySubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target NightlySubmit"
 .PHONY : test_cases/CMakeFiles/NightlySubmit.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/NightlySubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlySubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -734,7 +772,7 @@ NightlySubmit: test_cases/CMakeFiles/NightlySubmit.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/NightlySubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlySubmit.dir\build.make test_cases/CMakeFiles/NightlySubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlySubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target NightlySubmit"
 .PHONY : test_cases/CMakeFiles/NightlySubmit.dir/codegen
 
 # clean rule for target.
@@ -749,14 +787,14 @@ test_cases/CMakeFiles/NightlySubmit.dir/clean:
 test_cases/CMakeFiles/ExperimentalStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalStart.dir\build.make test_cases/CMakeFiles/ExperimentalStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalStart.dir\build.make test_cases/CMakeFiles/ExperimentalStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalStart"
 .PHONY : test_cases/CMakeFiles/ExperimentalStart.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -766,7 +804,7 @@ ExperimentalStart: test_cases/CMakeFiles/ExperimentalStart.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalStart.dir\build.make test_cases/CMakeFiles/ExperimentalStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalStart"
 .PHONY : test_cases/CMakeFiles/ExperimentalStart.dir/codegen
 
 # clean rule for target.
@@ -781,14 +819,14 @@ test_cases/CMakeFiles/ExperimentalStart.dir/clean:
 test_cases/CMakeFiles/ExperimentalUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalUpdate.dir\build.make test_cases/CMakeFiles/ExperimentalUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalUpdate.dir\build.make test_cases/CMakeFiles/ExperimentalUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalUpdate"
 .PHONY : test_cases/CMakeFiles/ExperimentalUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -798,7 +836,7 @@ ExperimentalUpdate: test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalUpdate.dir\build.make test_cases/CMakeFiles/ExperimentalUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalUpdate"
 .PHONY : test_cases/CMakeFiles/ExperimentalUpdate.dir/codegen
 
 # clean rule for target.
@@ -813,14 +851,14 @@ test_cases/CMakeFiles/ExperimentalUpdate.dir/clean:
 test_cases/CMakeFiles/ExperimentalConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalConfigure.dir\build.make test_cases/CMakeFiles/ExperimentalConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalConfigure.dir\build.make test_cases/CMakeFiles/ExperimentalConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalConfigure"
 .PHONY : test_cases/CMakeFiles/ExperimentalConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -830,7 +868,7 @@ ExperimentalConfigure: test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalConfigure.dir\build.make test_cases/CMakeFiles/ExperimentalConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalConfigure"
 .PHONY : test_cases/CMakeFiles/ExperimentalConfigure.dir/codegen
 
 # clean rule for target.
@@ -845,14 +883,14 @@ test_cases/CMakeFiles/ExperimentalConfigure.dir/clean:
 test_cases/CMakeFiles/ExperimentalBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalBuild.dir\build.make test_cases/CMakeFiles/ExperimentalBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalBuild.dir\build.make test_cases/CMakeFiles/ExperimentalBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalBuild"
 .PHONY : test_cases/CMakeFiles/ExperimentalBuild.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -862,7 +900,7 @@ ExperimentalBuild: test_cases/CMakeFiles/ExperimentalBuild.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalBuild.dir\build.make test_cases/CMakeFiles/ExperimentalBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalBuild"
 .PHONY : test_cases/CMakeFiles/ExperimentalBuild.dir/codegen
 
 # clean rule for target.
@@ -877,14 +915,14 @@ test_cases/CMakeFiles/ExperimentalBuild.dir/clean:
 test_cases/CMakeFiles/ExperimentalTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalTest.dir\build.make test_cases/CMakeFiles/ExperimentalTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalTest.dir\build.make test_cases/CMakeFiles/ExperimentalTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalTest"
 .PHONY : test_cases/CMakeFiles/ExperimentalTest.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -894,7 +932,7 @@ ExperimentalTest: test_cases/CMakeFiles/ExperimentalTest.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalTest.dir\build.make test_cases/CMakeFiles/ExperimentalTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalTest"
 .PHONY : test_cases/CMakeFiles/ExperimentalTest.dir/codegen
 
 # clean rule for target.
@@ -909,14 +947,14 @@ test_cases/CMakeFiles/ExperimentalTest.dir/clean:
 test_cases/CMakeFiles/ExperimentalCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalCoverage.dir\build.make test_cases/CMakeFiles/ExperimentalCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalCoverage.dir\build.make test_cases/CMakeFiles/ExperimentalCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalCoverage"
 .PHONY : test_cases/CMakeFiles/ExperimentalCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -926,7 +964,7 @@ ExperimentalCoverage: test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalCoverage.dir\build.make test_cases/CMakeFiles/ExperimentalCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalCoverage"
 .PHONY : test_cases/CMakeFiles/ExperimentalCoverage.dir/codegen
 
 # clean rule for target.
@@ -941,14 +979,14 @@ test_cases/CMakeFiles/ExperimentalCoverage.dir/clean:
 test_cases/CMakeFiles/ExperimentalMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalMemCheck.dir\build.make test_cases/CMakeFiles/ExperimentalMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalMemCheck.dir\build.make test_cases/CMakeFiles/ExperimentalMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalMemCheck"
 .PHONY : test_cases/CMakeFiles/ExperimentalMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -958,7 +996,7 @@ ExperimentalMemCheck: test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalMemCheck.dir\build.make test_cases/CMakeFiles/ExperimentalMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalMemCheck"
 .PHONY : test_cases/CMakeFiles/ExperimentalMemCheck.dir/codegen
 
 # clean rule for target.
@@ -973,14 +1011,14 @@ test_cases/CMakeFiles/ExperimentalMemCheck.dir/clean:
 test_cases/CMakeFiles/ExperimentalSubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalSubmit.dir\build.make test_cases/CMakeFiles/ExperimentalSubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalSubmit.dir\build.make test_cases/CMakeFiles/ExperimentalSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ExperimentalSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ExperimentalSubmit"
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ExperimentalSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -990,7 +1028,7 @@ ExperimentalSubmit: test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ExperimentalSubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalSubmit.dir\build.make test_cases/CMakeFiles/ExperimentalSubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ExperimentalSubmit"
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/codegen
 
 # clean rule for target.
@@ -1005,14 +1043,14 @@ test_cases/CMakeFiles/ExperimentalSubmit.dir/clean:
 test_cases/CMakeFiles/ContinuousStart.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousStart.dir\build.make test_cases/CMakeFiles/ContinuousStart.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousStart.dir\build.make test_cases/CMakeFiles/ContinuousStart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousStart"
 .PHONY : test_cases/CMakeFiles/ContinuousStart.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousStart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousStart.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -1022,7 +1060,7 @@ ContinuousStart: test_cases/CMakeFiles/ContinuousStart.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousStart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousStart.dir\build.make test_cases/CMakeFiles/ContinuousStart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousStart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousStart"
 .PHONY : test_cases/CMakeFiles/ContinuousStart.dir/codegen
 
 # clean rule for target.
@@ -1037,14 +1075,14 @@ test_cases/CMakeFiles/ContinuousStart.dir/clean:
 test_cases/CMakeFiles/ContinuousUpdate.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousUpdate.dir\build.make test_cases/CMakeFiles/ContinuousUpdate.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousUpdate.dir\build.make test_cases/CMakeFiles/ContinuousUpdate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousUpdate"
 .PHONY : test_cases/CMakeFiles/ContinuousUpdate.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousUpdate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousUpdate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -1054,7 +1092,7 @@ ContinuousUpdate: test_cases/CMakeFiles/ContinuousUpdate.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousUpdate.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousUpdate.dir\build.make test_cases/CMakeFiles/ContinuousUpdate.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousUpdate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousUpdate"
 .PHONY : test_cases/CMakeFiles/ContinuousUpdate.dir/codegen
 
 # clean rule for target.
@@ -1069,14 +1107,14 @@ test_cases/CMakeFiles/ContinuousUpdate.dir/clean:
 test_cases/CMakeFiles/ContinuousConfigure.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousConfigure.dir\build.make test_cases/CMakeFiles/ContinuousConfigure.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousConfigure.dir\build.make test_cases/CMakeFiles/ContinuousConfigure.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousConfigure"
 .PHONY : test_cases/CMakeFiles/ContinuousConfigure.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousConfigure.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousConfigure.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -1086,7 +1124,7 @@ ContinuousConfigure: test_cases/CMakeFiles/ContinuousConfigure.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousConfigure.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousConfigure.dir\build.make test_cases/CMakeFiles/ContinuousConfigure.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousConfigure"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousConfigure"
 .PHONY : test_cases/CMakeFiles/ContinuousConfigure.dir/codegen
 
 # clean rule for target.
@@ -1101,14 +1139,14 @@ test_cases/CMakeFiles/ContinuousConfigure.dir/clean:
 test_cases/CMakeFiles/ContinuousBuild.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousBuild.dir\build.make test_cases/CMakeFiles/ContinuousBuild.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousBuild.dir\build.make test_cases/CMakeFiles/ContinuousBuild.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousBuild"
 .PHONY : test_cases/CMakeFiles/ContinuousBuild.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousBuild.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousBuild.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -1118,7 +1156,7 @@ ContinuousBuild: test_cases/CMakeFiles/ContinuousBuild.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousBuild.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousBuild.dir\build.make test_cases/CMakeFiles/ContinuousBuild.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousBuild"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousBuild"
 .PHONY : test_cases/CMakeFiles/ContinuousBuild.dir/codegen
 
 # clean rule for target.
@@ -1133,14 +1171,14 @@ test_cases/CMakeFiles/ContinuousBuild.dir/clean:
 test_cases/CMakeFiles/ContinuousTest.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousTest.dir\build.make test_cases/CMakeFiles/ContinuousTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousTest.dir\build.make test_cases/CMakeFiles/ContinuousTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousTest"
 .PHONY : test_cases/CMakeFiles/ContinuousTest.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -1150,7 +1188,7 @@ ContinuousTest: test_cases/CMakeFiles/ContinuousTest.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousTest.dir\build.make test_cases/CMakeFiles/ContinuousTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousTest"
 .PHONY : test_cases/CMakeFiles/ContinuousTest.dir/codegen
 
 # clean rule for target.
@@ -1165,14 +1203,14 @@ test_cases/CMakeFiles/ContinuousTest.dir/clean:
 test_cases/CMakeFiles/ContinuousCoverage.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousCoverage.dir\build.make test_cases/CMakeFiles/ContinuousCoverage.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousCoverage.dir\build.make test_cases/CMakeFiles/ContinuousCoverage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousCoverage"
 .PHONY : test_cases/CMakeFiles/ContinuousCoverage.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousCoverage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousCoverage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -1182,7 +1220,7 @@ ContinuousCoverage: test_cases/CMakeFiles/ContinuousCoverage.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousCoverage.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousCoverage.dir\build.make test_cases/CMakeFiles/ContinuousCoverage.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousCoverage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousCoverage"
 .PHONY : test_cases/CMakeFiles/ContinuousCoverage.dir/codegen
 
 # clean rule for target.
@@ -1197,14 +1235,14 @@ test_cases/CMakeFiles/ContinuousCoverage.dir/clean:
 test_cases/CMakeFiles/ContinuousMemCheck.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousMemCheck.dir\build.make test_cases/CMakeFiles/ContinuousMemCheck.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousMemCheck.dir\build.make test_cases/CMakeFiles/ContinuousMemCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousMemCheck"
 .PHONY : test_cases/CMakeFiles/ContinuousMemCheck.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousMemCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousMemCheck.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -1214,7 +1252,7 @@ ContinuousMemCheck: test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousMemCheck.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousMemCheck.dir\build.make test_cases/CMakeFiles/ContinuousMemCheck.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousMemCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousMemCheck"
 .PHONY : test_cases/CMakeFiles/ContinuousMemCheck.dir/codegen
 
 # clean rule for target.
@@ -1229,14 +1267,14 @@ test_cases/CMakeFiles/ContinuousMemCheck.dir/clean:
 test_cases/CMakeFiles/ContinuousSubmit.dir/all:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousSubmit.dir\build.make test_cases/CMakeFiles/ContinuousSubmit.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousSubmit.dir\build.make test_cases/CMakeFiles/ContinuousSubmit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Built target ContinuousSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Built target ContinuousSubmit"
 .PHONY : test_cases/CMakeFiles/ContinuousSubmit.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/ContinuousSubmit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousSubmit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -1246,7 +1284,7 @@ ContinuousSubmit: test_cases/CMakeFiles/ContinuousSubmit.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/ContinuousSubmit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousSubmit.dir\build.make test_cases/CMakeFiles/ContinuousSubmit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousSubmit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num= "Finished codegen for target ContinuousSubmit"
 .PHONY : test_cases/CMakeFiles/ContinuousSubmit.dir/codegen
 
 # clean rule for target.
@@ -1263,14 +1301,14 @@ test_cases/CMakeFiles/TimeParserTest.dir/all: googletest/googletest/CMakeFiles/g
 test_cases/CMakeFiles/TimeParserTest.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=3,4 "Built target TimeParserTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=7,8 "Built target TimeParserTest"
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/all
 
 # Build rule for subdir invocation for target.
 test_cases/CMakeFiles/TimeParserTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/TimeParserTest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/rule
 
 # Convenience name for target.
@@ -1280,13 +1318,47 @@ TimeParserTest: test_cases/CMakeFiles/TimeParserTest.dir/rule
 # codegen rule for target.
 test_cases/CMakeFiles/TimeParserTest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=3,4 "Finished codegen for target TimeParserTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=7,8 "Finished codegen for target TimeParserTest"
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/codegen
 
 # clean rule for target.
 test_cases/CMakeFiles/TimeParserTest.dir/clean:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/clean
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/clean
+
+#=============================================================================
+# Target rules for target test_cases/CMakeFiles/CommandParserTest.dir
+
+# All Build rule for target.
+test_cases/CMakeFiles/CommandParserTest.dir/all: CMakeFiles/CommandParser.dir/all
+test_cases/CMakeFiles/CommandParserTest.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+test_cases/CMakeFiles/CommandParserTest.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=3,4 "Built target CommandParserTest"
+.PHONY : test_cases/CMakeFiles/CommandParserTest.dir/all
+
+# Build rule for subdir invocation for target.
+test_cases/CMakeFiles/CommandParserTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/CommandParserTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
+.PHONY : test_cases/CMakeFiles/CommandParserTest.dir/rule
+
+# Convenience name for target.
+CommandParserTest: test_cases/CMakeFiles/CommandParserTest.dir/rule
+.PHONY : CommandParserTest
+
+# codegen rule for target.
+test_cases/CMakeFiles/CommandParserTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=3,4 "Finished codegen for target CommandParserTest"
+.PHONY : test_cases/CMakeFiles/CommandParserTest.dir/codegen
+
+# clean rule for target.
+test_cases/CMakeFiles/CommandParserTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/clean
+.PHONY : test_cases/CMakeFiles/CommandParserTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

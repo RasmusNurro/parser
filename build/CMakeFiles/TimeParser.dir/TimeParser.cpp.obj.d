@@ -1,5 +1,5 @@
 CMakeFiles/TimeParser.dir/TimeParser.cpp.obj: \
- C:\Users\rasmu\sulatetut\parser\TimeParser.cpp \
+ C:\Users\rasmu\parser\TimeParser.cpp \
  C:/msys64/ucrt64/include/c++/16.2.0/stdlib.h \
  C:/msys64/ucrt64/include/c++/16.2.0/cstdlib \
  C:/msys64/ucrt64/include/c++/16.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -24,4 +24,4 @@ CMakeFiles/TimeParser.dir/TimeParser.cpp.obj: \
  C:/msys64/ucrt64/include/corecrt_wstring.h \
  C:/msys64/ucrt64/include/ctype.h \
  C:/msys64/ucrt64/include/corecrt_wctype.h \
- C:\Users\rasmu\sulatetut\parser\TimeParser.h
+ C:\Users\rasmu\parser\TimeParser.h

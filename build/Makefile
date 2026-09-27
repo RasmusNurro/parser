@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,9 +141,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles C:\Users\rasmu\sulatetut\parser\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles C:\Users\rasmu\parser\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,6 +182,19 @@ TimeParser: cmake_check_build_system
 TimeParser/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TimeParser.dir\build.make CMakeFiles/TimeParser.dir/build
 .PHONY : TimeParser/fast
+
+#=============================================================================
+# Target rules for targets named CommandParser
+
+# Build rule for target.
+CommandParser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CommandParser
+.PHONY : CommandParser
+
+# fast build rule for target.
+CommandParser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/build
+.PHONY : CommandParser/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -612,6 +625,43 @@ TimeParserTest/fast:
 	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/build
 .PHONY : TimeParserTest/fast
 
+#=============================================================================
+# Target rules for targets named CommandParserTest
+
+# Build rule for target.
+CommandParserTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CommandParserTest
+.PHONY : CommandParserTest
+
+# fast build rule for target.
+CommandParserTest/fast:
+	$(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/build
+.PHONY : CommandParserTest/fast
+
+CommandParser.obj: CommandParser.cpp.obj
+.PHONY : CommandParser.obj
+
+# target to build an object file
+CommandParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/CommandParser.cpp.obj
+.PHONY : CommandParser.cpp.obj
+
+CommandParser.i: CommandParser.cpp.i
+.PHONY : CommandParser.i
+
+# target to preprocess a source file
+CommandParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/CommandParser.cpp.i
+.PHONY : CommandParser.cpp.i
+
+CommandParser.s: CommandParser.cpp.s
+.PHONY : CommandParser.s
+
+# target to generate assembly for a file
+CommandParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CommandParser.dir\build.make CMakeFiles/CommandParser.dir/CommandParser.cpp.s
+.PHONY : CommandParser.cpp.s
+
 TimeParser.obj: TimeParser.cpp.obj
 .PHONY : TimeParser.obj
 
@@ -677,12 +727,17 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
+	@echo ... CommandParser
+	@echo ... CommandParserTest
 	@echo ... TimeParser
 	@echo ... TimeParserTest
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... CommandParser.obj
+	@echo ... CommandParser.i
+	@echo ... CommandParser.s
 	@echo ... TimeParser.obj
 	@echo ... TimeParser.i
 	@echo ... TimeParser.s

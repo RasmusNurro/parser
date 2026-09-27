@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -66,7 +66,7 @@ include test_cases/CMakeFiles/ExperimentalSubmit.dir/compiler_depend.make
 include test_cases/CMakeFiles/ExperimentalSubmit.dir/progress.make
 
 test_cases/CMakeFiles/ExperimentalSubmit:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
+	cd /d C:\Users\rasmu\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Experimental -DACTIONS=Submit -S CMakeFiles/CTestScript.cmake -V
 
 test_cases/CMakeFiles/ExperimentalSubmit.dir/codegen:
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/codegen
@@ -80,10 +80,10 @@ test_cases/CMakeFiles/ExperimentalSubmit.dir/build: ExperimentalSubmit
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/build
 
 test_cases/CMakeFiles/ExperimentalSubmit.dir/clean:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\ExperimentalSubmit.dir\cmake_clean.cmake
+	cd /d C:\Users\rasmu\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\ExperimentalSubmit.dir\cmake_clean.cmake
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/clean
 
 test_cases/CMakeFiles/ExperimentalSubmit.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\sulatetut\parser C:\Users\rasmu\sulatetut\parser\test_cases C:\Users\rasmu\sulatetut\parser\build C:\Users\rasmu\sulatetut\parser\build\test_cases C:\Users\rasmu\sulatetut\parser\build\test_cases\CMakeFiles\ExperimentalSubmit.dir\DependInfo.cmake "--color=$(COLOR)" ExperimentalSubmit
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\parser C:\Users\rasmu\parser\test_cases C:\Users\rasmu\parser\build C:\Users\rasmu\parser\build\test_cases C:\Users\rasmu\parser\build\test_cases\CMakeFiles\ExperimentalSubmit.dir\DependInfo.cmake "--color=$(COLOR)" ExperimentalSubmit
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/depend
 

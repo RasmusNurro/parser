@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 # Utility rule file for Nightly.
 
@@ -66,7 +66,7 @@ include test_cases/CMakeFiles/Nightly.dir/compiler_depend.make
 include test_cases/CMakeFiles/Nightly.dir/progress.make
 
 test_cases/CMakeFiles/Nightly:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -S CMakeFiles/CTestScript.cmake -V
+	cd /d C:\Users\rasmu\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -S CMakeFiles/CTestScript.cmake -V
 
 test_cases/CMakeFiles/Nightly.dir/codegen:
 .PHONY : test_cases/CMakeFiles/Nightly.dir/codegen
@@ -80,10 +80,10 @@ test_cases/CMakeFiles/Nightly.dir/build: Nightly
 .PHONY : test_cases/CMakeFiles/Nightly.dir/build
 
 test_cases/CMakeFiles/Nightly.dir/clean:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\Nightly.dir\cmake_clean.cmake
+	cd /d C:\Users\rasmu\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\Nightly.dir\cmake_clean.cmake
 .PHONY : test_cases/CMakeFiles/Nightly.dir/clean
 
 test_cases/CMakeFiles/Nightly.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\sulatetut\parser C:\Users\rasmu\sulatetut\parser\test_cases C:\Users\rasmu\sulatetut\parser\build C:\Users\rasmu\sulatetut\parser\build\test_cases C:\Users\rasmu\sulatetut\parser\build\test_cases\CMakeFiles\Nightly.dir\DependInfo.cmake "--color=$(COLOR)" Nightly
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\parser C:\Users\rasmu\parser\test_cases C:\Users\rasmu\parser\build C:\Users\rasmu\parser\build\test_cases C:\Users\rasmu\parser\build\test_cases\CMakeFiles\Nightly.dir\DependInfo.cmake "--color=$(COLOR)" Nightly
 .PHONY : test_cases/CMakeFiles/Nightly.dir/depend
 

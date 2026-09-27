@@ -1,1 +1,1 @@
--isystem C:/Users/rasmu/sulatetut/parser/googletest/googlemock/include -isystem C:/Users/rasmu/sulatetut/parser/googletest/googlemock -isystem C:/Users/rasmu/sulatetut/parser/googletest/googletest/include -isystem C:/Users/rasmu/sulatetut/parser/googletest/googletest
+-isystem C:/Users/rasmu/parser/googletest/googlemock/include -isystem C:/Users/rasmu/parser/googletest/googlemock -isystem C:/Users/rasmu/parser/googletest/googletest/include -isystem C:/Users/rasmu/parser/googletest/googletest

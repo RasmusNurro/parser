@@ -21,3 +21,20 @@ add_test(
 	COMMAND ${This}
 )
 
+# Uudet testit/
+set (This2 CommandParserTest)
+
+set(Sources2
+	CommandParserTest.cpp
+)
+
+add_executable(${This2} ${Sources2})
+target_link_libraries(${This2} PUBLIC
+	gtest_main
+	CommandParser
+)
+
+add_test(
+	NAME ${This2}
+	COMMAND ${This2}
+)

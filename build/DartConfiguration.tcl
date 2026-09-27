@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/rasmu/sulatetut/parser
-BuildDirectory: C:/Users/rasmu/sulatetut/parser/build
+SourceDirectory: C:/Users/rasmu/parser
+BuildDirectory: C:/Users/rasmu/parser/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/rasmu/sulatetut/parser"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/rasmu/parser"
 MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

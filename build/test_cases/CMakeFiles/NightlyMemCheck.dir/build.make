@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 # Utility rule file for NightlyMemCheck.
 
@@ -66,7 +66,7 @@ include test_cases/CMakeFiles/NightlyMemCheck.dir/compiler_depend.make
 include test_cases/CMakeFiles/NightlyMemCheck.dir/progress.make
 
 test_cases/CMakeFiles/NightlyMemCheck:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V
+	cd /d C:\Users\rasmu\parser\build\test_cases && "C:\Program Files\CMake\bin\ctest.exe" -DMODEL=Nightly -DACTIONS=MemCheck -S CMakeFiles/CTestScript.cmake -V
 
 test_cases/CMakeFiles/NightlyMemCheck.dir/codegen:
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/codegen
@@ -80,10 +80,10 @@ test_cases/CMakeFiles/NightlyMemCheck.dir/build: NightlyMemCheck
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/build
 
 test_cases/CMakeFiles/NightlyMemCheck.dir/clean:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\NightlyMemCheck.dir\cmake_clean.cmake
+	cd /d C:\Users\rasmu\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\NightlyMemCheck.dir\cmake_clean.cmake
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/clean
 
 test_cases/CMakeFiles/NightlyMemCheck.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\sulatetut\parser C:\Users\rasmu\sulatetut\parser\test_cases C:\Users\rasmu\sulatetut\parser\build C:\Users\rasmu\sulatetut\parser\build\test_cases C:\Users\rasmu\sulatetut\parser\build\test_cases\CMakeFiles\NightlyMemCheck.dir\DependInfo.cmake "--color=$(COLOR)" NightlyMemCheck
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\parser C:\Users\rasmu\parser\test_cases C:\Users\rasmu\parser\build C:\Users\rasmu\parser\build\test_cases C:\Users\rasmu\parser\build\test_cases\CMakeFiles\NightlyMemCheck.dir\DependInfo.cmake "--color=$(COLOR)" NightlyMemCheck
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/depend
 

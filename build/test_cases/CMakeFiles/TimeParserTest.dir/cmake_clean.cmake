@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe"
-  "C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe.manifest"
-  "C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.pdb"
+  "C:/Users/rasmu/parser/test_program/TimeParserTest.exe"
+  "C:/Users/rasmu/parser/test_program/TimeParserTest.exe.manifest"
+  "C:/Users/rasmu/parser/test_program/TimeParserTest.pdb"
   "CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj"
   "CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj.d"
   "libTimeParserTest.dll.a"

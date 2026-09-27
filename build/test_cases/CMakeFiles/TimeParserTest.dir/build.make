@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 # Include any dependencies generated for this target.
 include test_cases/CMakeFiles/TimeParserTest.dir/depend.make
@@ -73,18 +73,18 @@ test_cases/CMakeFiles/TimeParserTest.dir/codegen:
 
 test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj: test_cases/CMakeFiles/TimeParserTest.dir/flags.make
 test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj: test_cases/CMakeFiles/TimeParserTest.dir/includes_CXX.rsp
-test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj: C:/Users/rasmu/sulatetut/parser/test_cases/TimeParserTest.cpp
+test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj: C:/Users/rasmu/parser/test_cases/TimeParserTest.cpp
 test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj: test_cases/CMakeFiles/TimeParserTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj"
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj -MF CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.obj.d -o CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.obj -c C:\Users\rasmu\sulatetut\parser\test_cases\TimeParserTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj"
+	cd /d C:\Users\rasmu\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj -MF CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.obj.d -o CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.obj -c C:\Users\rasmu\parser\test_cases\TimeParserTest.cpp
 
 test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.i"
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rasmu\sulatetut\parser\test_cases\TimeParserTest.cpp > CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.i
+	cd /d C:\Users\rasmu\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rasmu\parser\test_cases\TimeParserTest.cpp > CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.i
 
 test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.s"
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rasmu\sulatetut\parser\test_cases\TimeParserTest.cpp -o CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.s
+	cd /d C:\Users\rasmu\parser\build\test_cases && C:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rasmu\parser\test_cases\TimeParserTest.cpp -o CMakeFiles\TimeParserTest.dir\TimeParserTest.cpp.s
 
 # Object files for target TimeParserTest
 TimeParserTest_OBJECTS = \
@@ -93,26 +93,26 @@ TimeParserTest_OBJECTS = \
 # External object files for target TimeParserTest
 TimeParserTest_EXTERNAL_OBJECTS =
 
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/build.make
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: lib/libgtest_main.a
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: libTimeParser.a
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: lib/libgtest.a
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/linkLibs.rsp
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/objects1.rsp
-C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\rasmu\sulatetut\parser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\Users\rasmu\sulatetut\parser\test_program\TimeParserTest.exe"
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TimeParserTest.dir\link.txt --verbose=$(VERBOSE)
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/build.make
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: lib/libgtest_main.a
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: libTimeParser.a
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: lib/libgtest.a
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/linkLibs.rsp
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/objects1.rsp
+C:/Users/rasmu/parser/test_program/TimeParserTest.exe: test_cases/CMakeFiles/TimeParserTest.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\rasmu\parser\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable C:\Users\rasmu\parser\test_program\TimeParserTest.exe"
+	cd /d C:\Users\rasmu\parser\build\test_cases && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TimeParserTest.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-test_cases/CMakeFiles/TimeParserTest.dir/build: C:/Users/rasmu/sulatetut/parser/test_program/TimeParserTest.exe
+test_cases/CMakeFiles/TimeParserTest.dir/build: C:/Users/rasmu/parser/test_program/TimeParserTest.exe
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/build
 
 test_cases/CMakeFiles/TimeParserTest.dir/clean:
-	cd /d C:\Users\rasmu\sulatetut\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\TimeParserTest.dir\cmake_clean.cmake
+	cd /d C:\Users\rasmu\parser\build\test_cases && $(CMAKE_COMMAND) -P CMakeFiles\TimeParserTest.dir\cmake_clean.cmake
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/clean
 
 test_cases/CMakeFiles/TimeParserTest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\sulatetut\parser C:\Users\rasmu\sulatetut\parser\test_cases C:\Users\rasmu\sulatetut\parser\build C:\Users\rasmu\sulatetut\parser\build\test_cases C:\Users\rasmu\sulatetut\parser\build\test_cases\CMakeFiles\TimeParserTest.dir\DependInfo.cmake "--color=$(COLOR)" TimeParserTest
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rasmu\parser C:\Users\rasmu\parser\test_cases C:\Users\rasmu\parser\build C:\Users\rasmu\parser\build\test_cases C:\Users\rasmu\parser\build\test_cases\CMakeFiles\TimeParserTest.dir\DependInfo.cmake "--color=$(COLOR)" TimeParserTest
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/depend
 

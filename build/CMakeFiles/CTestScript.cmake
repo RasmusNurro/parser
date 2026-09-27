@@ -5,8 +5,8 @@
 cmake_minimum_required(VERSION 4.2.0-rc2)
 
 # CTest Start Step
-set(CTEST_SOURCE_DIRECTORY "C:/Users/rasmu/sulatetut/parser")
-set(CTEST_BINARY_DIRECTORY "C:/Users/rasmu/sulatetut/parser/build")
+set(CTEST_SOURCE_DIRECTORY "C:/Users/rasmu/parser")
+set(CTEST_BINARY_DIRECTORY "C:/Users/rasmu/parser/build")
 
 # CTest Update Step
 set(CTEST_UPDATE_COMMAND "")

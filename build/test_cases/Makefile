@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rasmu\sulatetut\parser
+CMAKE_SOURCE_DIR = C:\Users\rasmu\parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rasmu\sulatetut\parser\build
+CMAKE_BINARY_DIR = C:\Users\rasmu\parser\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles C:\Users\rasmu\sulatetut\parser\build\test_cases\\CMakeFiles\progress.marks
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\sulatetut\parser\build\CMakeFiles 0
+	cd /d C:\Users\rasmu\parser\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles C:\Users\rasmu\parser\build\test_cases\\CMakeFiles\progress.marks
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rasmu\parser\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/clean
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/preinstall
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/preinstall
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\rasmu\parser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test_cases/CMakeFiles/Experimental.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Experimental.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Experimental.dir/rule
 .PHONY : test_cases/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ Experimental: test_cases/CMakeFiles/Experimental.dir/rule
 
 # fast build rule for target.
 Experimental/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Experimental.dir\build.make test_cases/CMakeFiles/Experimental.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Experimental.dir\build.make test_cases/CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/Nightly.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Nightly.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Nightly.dir/rule
 .PHONY : test_cases/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -195,12 +195,12 @@ Nightly: test_cases/CMakeFiles/Nightly.dir/rule
 
 # fast build rule for target.
 Nightly/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Nightly.dir\build.make test_cases/CMakeFiles/Nightly.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Nightly.dir\build.make test_cases/CMakeFiles/Nightly.dir/build
 .PHONY : Nightly/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/Continuous.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Continuous.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/Continuous.dir/rule
 .PHONY : test_cases/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ Continuous: test_cases/CMakeFiles/Continuous.dir/rule
 
 # fast build rule for target.
 Continuous/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Continuous.dir\build.make test_cases/CMakeFiles/Continuous.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\Continuous.dir\build.make test_cases/CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -223,12 +223,12 @@ NightlyMemoryCheck: test_cases/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemoryCheck/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemoryCheck.dir\build.make test_cases/CMakeFiles/NightlyMemoryCheck.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemoryCheck.dir\build.make test_cases/CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyStart.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyStart.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyStart.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ NightlyStart: test_cases/CMakeFiles/NightlyStart.dir/rule
 
 # fast build rule for target.
 NightlyStart/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyStart.dir\build.make test_cases/CMakeFiles/NightlyStart.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyStart.dir\build.make test_cases/CMakeFiles/NightlyStart.dir/build
 .PHONY : NightlyStart/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyUpdate.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyUpdate.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyUpdate.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -251,12 +251,12 @@ NightlyUpdate: test_cases/CMakeFiles/NightlyUpdate.dir/rule
 
 # fast build rule for target.
 NightlyUpdate/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyUpdate.dir\build.make test_cases/CMakeFiles/NightlyUpdate.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyUpdate.dir\build.make test_cases/CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyConfigure.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyConfigure.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyConfigure.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -265,12 +265,12 @@ NightlyConfigure: test_cases/CMakeFiles/NightlyConfigure.dir/rule
 
 # fast build rule for target.
 NightlyConfigure/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyConfigure.dir\build.make test_cases/CMakeFiles/NightlyConfigure.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyConfigure.dir\build.make test_cases/CMakeFiles/NightlyConfigure.dir/build
 .PHONY : NightlyConfigure/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyBuild.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyBuild.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyBuild.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -279,12 +279,12 @@ NightlyBuild: test_cases/CMakeFiles/NightlyBuild.dir/rule
 
 # fast build rule for target.
 NightlyBuild/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyBuild.dir\build.make test_cases/CMakeFiles/NightlyBuild.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyBuild.dir\build.make test_cases/CMakeFiles/NightlyBuild.dir/build
 .PHONY : NightlyBuild/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyTest.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyTest.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyTest.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -293,12 +293,12 @@ NightlyTest: test_cases/CMakeFiles/NightlyTest.dir/rule
 
 # fast build rule for target.
 NightlyTest/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyTest.dir\build.make test_cases/CMakeFiles/NightlyTest.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyTest.dir\build.make test_cases/CMakeFiles/NightlyTest.dir/build
 .PHONY : NightlyTest/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyCoverage.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyCoverage.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyCoverage.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -307,12 +307,12 @@ NightlyCoverage: test_cases/CMakeFiles/NightlyCoverage.dir/rule
 
 # fast build rule for target.
 NightlyCoverage/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyCoverage.dir\build.make test_cases/CMakeFiles/NightlyCoverage.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyCoverage.dir\build.make test_cases/CMakeFiles/NightlyCoverage.dir/build
 .PHONY : NightlyCoverage/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlyMemCheck.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemCheck.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlyMemCheck.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -321,12 +321,12 @@ NightlyMemCheck: test_cases/CMakeFiles/NightlyMemCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemCheck/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemCheck.dir\build.make test_cases/CMakeFiles/NightlyMemCheck.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlyMemCheck.dir\build.make test_cases/CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/NightlySubmit.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlySubmit.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/NightlySubmit.dir/rule
 .PHONY : test_cases/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -335,12 +335,12 @@ NightlySubmit: test_cases/CMakeFiles/NightlySubmit.dir/rule
 
 # fast build rule for target.
 NightlySubmit/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlySubmit.dir\build.make test_cases/CMakeFiles/NightlySubmit.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\NightlySubmit.dir\build.make test_cases/CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalStart.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalStart.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalStart.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -349,12 +349,12 @@ ExperimentalStart: test_cases/CMakeFiles/ExperimentalStart.dir/rule
 
 # fast build rule for target.
 ExperimentalStart/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalStart.dir\build.make test_cases/CMakeFiles/ExperimentalStart.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalStart.dir\build.make test_cases/CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalUpdate.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -363,12 +363,12 @@ ExperimentalUpdate: test_cases/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # fast build rule for target.
 ExperimentalUpdate/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalUpdate.dir\build.make test_cases/CMakeFiles/ExperimentalUpdate.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalUpdate.dir\build.make test_cases/CMakeFiles/ExperimentalUpdate.dir/build
 .PHONY : ExperimentalUpdate/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalConfigure.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -377,12 +377,12 @@ ExperimentalConfigure: test_cases/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # fast build rule for target.
 ExperimentalConfigure/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalConfigure.dir\build.make test_cases/CMakeFiles/ExperimentalConfigure.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalConfigure.dir\build.make test_cases/CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalBuild.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalBuild.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalBuild.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -391,12 +391,12 @@ ExperimentalBuild: test_cases/CMakeFiles/ExperimentalBuild.dir/rule
 
 # fast build rule for target.
 ExperimentalBuild/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalBuild.dir\build.make test_cases/CMakeFiles/ExperimentalBuild.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalBuild.dir\build.make test_cases/CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalTest.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalTest.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalTest.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -405,12 +405,12 @@ ExperimentalTest: test_cases/CMakeFiles/ExperimentalTest.dir/rule
 
 # fast build rule for target.
 ExperimentalTest/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalTest.dir\build.make test_cases/CMakeFiles/ExperimentalTest.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalTest.dir\build.make test_cases/CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalCoverage.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ ExperimentalCoverage: test_cases/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # fast build rule for target.
 ExperimentalCoverage/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalCoverage.dir\build.make test_cases/CMakeFiles/ExperimentalCoverage.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalCoverage.dir\build.make test_cases/CMakeFiles/ExperimentalCoverage.dir/build
 .PHONY : ExperimentalCoverage/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -433,12 +433,12 @@ ExperimentalMemCheck: test_cases/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # fast build rule for target.
 ExperimentalMemCheck/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalMemCheck.dir\build.make test_cases/CMakeFiles/ExperimentalMemCheck.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalMemCheck.dir\build.make test_cases/CMakeFiles/ExperimentalMemCheck.dir/build
 .PHONY : ExperimentalMemCheck/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ExperimentalSubmit.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
 .PHONY : test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -447,12 +447,12 @@ ExperimentalSubmit: test_cases/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # fast build rule for target.
 ExperimentalSubmit/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalSubmit.dir\build.make test_cases/CMakeFiles/ExperimentalSubmit.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ExperimentalSubmit.dir\build.make test_cases/CMakeFiles/ExperimentalSubmit.dir/build
 .PHONY : ExperimentalSubmit/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousStart.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousStart.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousStart.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -461,12 +461,12 @@ ContinuousStart: test_cases/CMakeFiles/ContinuousStart.dir/rule
 
 # fast build rule for target.
 ContinuousStart/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousStart.dir\build.make test_cases/CMakeFiles/ContinuousStart.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousStart.dir\build.make test_cases/CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousUpdate.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousUpdate.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousUpdate.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -475,12 +475,12 @@ ContinuousUpdate: test_cases/CMakeFiles/ContinuousUpdate.dir/rule
 
 # fast build rule for target.
 ContinuousUpdate/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousUpdate.dir\build.make test_cases/CMakeFiles/ContinuousUpdate.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousUpdate.dir\build.make test_cases/CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousConfigure.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousConfigure.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousConfigure.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -489,12 +489,12 @@ ContinuousConfigure: test_cases/CMakeFiles/ContinuousConfigure.dir/rule
 
 # fast build rule for target.
 ContinuousConfigure/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousConfigure.dir\build.make test_cases/CMakeFiles/ContinuousConfigure.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousConfigure.dir\build.make test_cases/CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousBuild.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousBuild.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousBuild.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -503,12 +503,12 @@ ContinuousBuild: test_cases/CMakeFiles/ContinuousBuild.dir/rule
 
 # fast build rule for target.
 ContinuousBuild/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousBuild.dir\build.make test_cases/CMakeFiles/ContinuousBuild.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousBuild.dir\build.make test_cases/CMakeFiles/ContinuousBuild.dir/build
 .PHONY : ContinuousBuild/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousTest.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousTest.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousTest.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -517,12 +517,12 @@ ContinuousTest: test_cases/CMakeFiles/ContinuousTest.dir/rule
 
 # fast build rule for target.
 ContinuousTest/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousTest.dir\build.make test_cases/CMakeFiles/ContinuousTest.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousTest.dir\build.make test_cases/CMakeFiles/ContinuousTest.dir/build
 .PHONY : ContinuousTest/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousCoverage.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousCoverage.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousCoverage.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -531,12 +531,12 @@ ContinuousCoverage: test_cases/CMakeFiles/ContinuousCoverage.dir/rule
 
 # fast build rule for target.
 ContinuousCoverage/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousCoverage.dir\build.make test_cases/CMakeFiles/ContinuousCoverage.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousCoverage.dir\build.make test_cases/CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousMemCheck.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -545,12 +545,12 @@ ContinuousMemCheck: test_cases/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # fast build rule for target.
 ContinuousMemCheck/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousMemCheck.dir\build.make test_cases/CMakeFiles/ContinuousMemCheck.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousMemCheck.dir\build.make test_cases/CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/ContinuousSubmit.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousSubmit.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/ContinuousSubmit.dir/rule
 .PHONY : test_cases/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -559,12 +559,12 @@ ContinuousSubmit: test_cases/CMakeFiles/ContinuousSubmit.dir/rule
 
 # fast build rule for target.
 ContinuousSubmit/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousSubmit.dir\build.make test_cases/CMakeFiles/ContinuousSubmit.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\ContinuousSubmit.dir\build.make test_cases/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
 # Convenience name for target.
 test_cases/CMakeFiles/TimeParserTest.dir/rule:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/TimeParserTest.dir/rule
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/TimeParserTest.dir/rule
 .PHONY : test_cases/CMakeFiles/TimeParserTest.dir/rule
 
 # Convenience name for target.
@@ -573,15 +573,53 @@ TimeParserTest: test_cases/CMakeFiles/TimeParserTest.dir/rule
 
 # fast build rule for target.
 TimeParserTest/fast:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/build
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/build
 .PHONY : TimeParserTest/fast
+
+# Convenience name for target.
+test_cases/CMakeFiles/CommandParserTest.dir/rule:
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_cases/CMakeFiles/CommandParserTest.dir/rule
+.PHONY : test_cases/CMakeFiles/CommandParserTest.dir/rule
+
+# Convenience name for target.
+CommandParserTest: test_cases/CMakeFiles/CommandParserTest.dir/rule
+.PHONY : CommandParserTest
+
+# fast build rule for target.
+CommandParserTest/fast:
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/build
+.PHONY : CommandParserTest/fast
+
+CommandParserTest.obj: CommandParserTest.cpp.obj
+.PHONY : CommandParserTest.obj
+
+# target to build an object file
+CommandParserTest.cpp.obj:
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/CommandParserTest.cpp.obj
+.PHONY : CommandParserTest.cpp.obj
+
+CommandParserTest.i: CommandParserTest.cpp.i
+.PHONY : CommandParserTest.i
+
+# target to preprocess a source file
+CommandParserTest.cpp.i:
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/CommandParserTest.cpp.i
+.PHONY : CommandParserTest.cpp.i
+
+CommandParserTest.s: CommandParserTest.cpp.s
+.PHONY : CommandParserTest.s
+
+# target to generate assembly for a file
+CommandParserTest.cpp.s:
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\CommandParserTest.dir\build.make test_cases/CMakeFiles/CommandParserTest.dir/CommandParserTest.cpp.s
+.PHONY : CommandParserTest.cpp.s
 
 TimeParserTest.obj: TimeParserTest.cpp.obj
 .PHONY : TimeParserTest.obj
 
 # target to build an object file
 TimeParserTest.cpp.obj:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.obj
 .PHONY : TimeParserTest.cpp.obj
 
 TimeParserTest.i: TimeParserTest.cpp.i
@@ -589,7 +627,7 @@ TimeParserTest.i: TimeParserTest.cpp.i
 
 # target to preprocess a source file
 TimeParserTest.cpp.i:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.i
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.i
 .PHONY : TimeParserTest.cpp.i
 
 TimeParserTest.s: TimeParserTest.cpp.s
@@ -597,7 +635,7 @@ TimeParserTest.s: TimeParserTest.cpp.s
 
 # target to generate assembly for a file
 TimeParserTest.cpp.s:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.s
+	cd /d C:\Users\rasmu\parser\build && $(MAKE) $(MAKESILENT) -f test_cases\CMakeFiles\TimeParserTest.dir\build.make test_cases/CMakeFiles/TimeParserTest.dir/TimeParserTest.cpp.s
 .PHONY : TimeParserTest.cpp.s
 
 # Help Target
@@ -641,7 +679,11 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
+	@echo ... CommandParserTest
 	@echo ... TimeParserTest
+	@echo ... CommandParserTest.obj
+	@echo ... CommandParserTest.i
+	@echo ... CommandParserTest.s
 	@echo ... TimeParserTest.obj
 	@echo ... TimeParserTest.i
 	@echo ... TimeParserTest.s
@@ -656,6 +698,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\rasmu\sulatetut\parser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\rasmu\parser\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
